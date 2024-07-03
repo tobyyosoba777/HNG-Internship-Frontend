@@ -100,11 +100,8 @@ main {
 }
 
 .main .profile .image img {
-    /* border-radius: 30px; */
     border: 3px double purple;
     outline-offset: #11001f 1px;
-    height: 310px;
-    width: 240px;
     border-radius: 70px 20px 30px 140px;
 }
 
