@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -42,23 +44,45 @@ body {
     z-index: 999;
 }
 
-.nav .profile-text {
-    font-size: 1.5em;
+.nav .profile {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.nav .profile h3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav .profile-text {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #22004d;
+}
+
 .nav .profile-text img {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
 
 .nav .misc {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 18px;
+}
+
+.nav .misc h3{
+    font-size: 1.3em;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 main {
@@ -292,7 +316,18 @@ main {
 }
 
 
-
+.other-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 
@@ -370,7 +405,14 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }    
+    }   
+    .nav .profile-text {
+        font-size: 1.1em;
+    } 
+    .nav .misc {
+        font-size: 0.78em;
+        gap: 5px;
+    }
     .information header {
         font-size: 1.7em;
         margin: 20px;
@@ -479,4 +521,8 @@ body.dark-mode .nav {
     top: 0;
     bottom: 0;
     right: 0;
+}
+
+body.dark-mode .nav .profile-text {
+    color: #fff;
 }

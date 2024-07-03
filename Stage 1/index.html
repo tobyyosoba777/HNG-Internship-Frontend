@@ -17,22 +17,25 @@
     </head>
     <body>
         <div class="nav">
-            <div class="profile">
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="profile-text" data-testid="Tobiloba Osoba">
-                <img width="64" height="64" src="https://img.icons8.com/arcade/64/tasks.png" alt="tasks"/>
-                <!-- <img width="64" height="64" src="https://img.icons8.com/nolan/64/tasks--v1.png" alt="tasks--v1"/> -->
-                Tobiloba Osoba
+            <div class="profile"> 
+                <div class="profile-text" data-testid="slackDisplayName">
+                    <img src="https://img.icons8.com/arcade/64/tasks.png" alt="tasks"/>
+                    <!-- <img width="64" height="64" src="https://img.icons8.com/nolan/64/tasks--v1.png" alt="tasks--v1"/> -->
+                    Tobiloba Osoba
+                </div>
             </div>
 
             <div class="misc">
+                
+                <h3 id="currentTime" data-testid="currentTimeUTC">
+                    <span class="day"> </span><br>
+                    <span class="time"></span>
+                </h3>
                 <div class="menu">
                     <a href="#">
-                        <i class="bx bx-menu"></i>
+                        
                     </a>
                 </div>
-
                 <div class="dark-mode-toggle">
                     <i class="bx bx-moon"></i>
                 </div>
@@ -46,7 +49,7 @@
         <main class="main">
             <div class="profile">
                 <div class="image">
-                    <img src="./assets/img/img2.png" data-testid="./assets/img/img2.png" alt="">
+                    <img src="./assets/img/img2.png" data-testid="slackProfilePicture" alt="">
                 </div>
                 <div class="socials">
                     <ul>
@@ -182,6 +185,15 @@
             
         </div>
 
+        <div class="other-links">
+            <h3>Relevant Links You Definitely Want to Check out</h3>
+            <ul>
+                <li><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" data-testid="keywordLink" target="_blank">Keyword Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank">Scrape Any Web</a></li>
+            </ul>
+        </div>
+
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-section">
@@ -190,7 +202,7 @@
                         part of the HNG Internship programme.</p>
                 </div>
                 <div class="footer-section">
-                    <h1>Relevant Links</h1>
+                    <h3>Relevant Links</h3>
                     <ul>
                         <li><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">HNG Learn</a></li>
                         <li><a href="https://keyword.dog" data-testid="keywordLink" target="_blank">Keyword Dog</a></li>
