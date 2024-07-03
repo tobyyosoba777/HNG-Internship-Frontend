@@ -26,7 +26,6 @@ body {
 
 .nav {
     height: 20px;
-    /* background: linear-gradient(to right bottom, #18002e, #000024); */
     background: #fff;
     color: #000;
     display: flex;
@@ -35,7 +34,6 @@ body {
     padding: 40px 25px;
     border-bottom: #919191 1px solid;
     box-shadow: 1px 1px 2px 2px #4444448c;
-    /* color: #fff; */
     position: sticky;
     left: 0;
     top: 0;
@@ -164,7 +162,6 @@ main {
 
 
 .information {
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: row;
     gap: 90px;
@@ -219,7 +216,7 @@ main {
     padding: 20px;
     margin: 0 auto;
     position: relative;
-    padding-top: 40px; /* To make space for the pseudo-element */
+    padding-top: 40px; 
 }
 
 .info div {
@@ -237,8 +234,8 @@ main {
 .info div::before {
     content: "1";
     position: absolute;
-    top: 10px; /* Adjust based on your layout */
-    left: 10px; /* Adjust based on your layout */
+    top: 10px; 
+    left: 10px; 
     width: 30px;
     height: 30px;
     background-color: #f0f0f0;
@@ -271,8 +268,6 @@ main {
 .info > div::before {
     content: attr(data-number);
     position: absolute;
-    /* left: -30px;
-    top: 0; */
     
     left: 45%;
     top: -30px;
@@ -474,9 +469,8 @@ main {
     }
 } */
 
-/* Dark mode styles triggered by the class */
+
 body.dark-mode {
-    /* background: linear-gradient(to right bottom, #14002c, #03001d); */
     background: linear-gradient(to right bottom, #100024, #03001a);
     color: #fff;
     transition: .5s ease-out all ;
@@ -488,7 +482,6 @@ body.dark-mode .information div {
 }
 
 body.dark-mode .information header {
-    /* font-size: 2em; */
     background: linear-gradient(to right bottom, #14002c, #11001f);
     border: 1px solid #ffffff7c;
     border-radius: 10px;
